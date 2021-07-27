@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>empform</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/empform}" th:object="${emp}" method="post">
+  First name: <input type="text" th:field="*{fname}" /><br />
+  Last name: <input type="text" th:field="*{lname}" /><br />
+  SSN: <input type="text" th:field="*{ssn}" /><br />
+  DOB: <input type="date" th:field="*{dob}" /><br />
+  <input type="submit" value="Submit" />
+
+</form>
+</body>
+</html>
