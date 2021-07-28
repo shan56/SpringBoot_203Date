@@ -10,6 +10,7 @@ public class Employee {
     private String fname;
     private String lname;
     private String ssn;
+
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE, pattern = "yyyy-MM-dd")
     private LocalDate dob;
 
